@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet";
 import { useNavigate } from 'react-router-dom';
 import { loginUser } from '../services/authService';
 import { User } from '../types/user';
-import ErrorMessage from './Common/errorMessage';
+import ErrorMessage from './Common/ErrorMessage';
 
 interface LoginProps {
 	setUser: React.Dispatch<React.SetStateAction<User | null>>;
@@ -103,7 +103,7 @@ const Login = ({ setUser }: LoginProps) => {
 
 						<div className="flex items-center mt-3 justify-center">
 							<button className="justify-center text-blue-500 hover:underline">
-								Need to register? <a href="/register">Sign up</a> for free
+								<a href="/register"> Need to register? Sign up for free</a>
 							</button>
 						</div>
 					</div>
