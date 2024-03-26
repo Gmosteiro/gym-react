@@ -87,7 +87,10 @@ const Login = ({ setUser }: LoginProps) => {
 								className="w-full p-2 text-primary border rounded-md outline-none text-sm transition duration-150 ease-in-out mb-4"
 							/>
 
-							<ErrorMessage message={showError.message} title={showError.title} />
+
+							{showError.message && (
+								<ErrorMessage message={showError.message} title={showError.title} />
+							)}
 
 							<div className="flex items-center mt-3 justify-center">
 								<button
