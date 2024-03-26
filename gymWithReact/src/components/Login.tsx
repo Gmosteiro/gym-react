@@ -63,6 +63,7 @@ const Login = ({ setUser }: LoginProps) => {
 				<div className="w-full max-w-md m-auto bg-white rounded-lg border border-primaryBorder shadow-default py-10 px-1">
 					<blockquote className="text-2xl font-medium text-center">
 						<p className="text-lg font-semibold">Welcome!</p>
+						<img src='../../public/gym.svg' alt="Gym" className="w-32 h-32 mx-auto mt-6" />
 					</blockquote>
 
 					<div className="text-primary m-6">
@@ -92,17 +93,17 @@ const Login = ({ setUser }: LoginProps) => {
 								<ErrorMessage message={showError.message} title={showError.title} />
 							)}
 
-							<div className="flex items-center mt-3 justify-center">
+							<div className="flex items-center  mt-3 justify-center">
 								<button
 									type="submit"
-									className="bg-blue-700 hover:bg-blue-500 py-2 px-4 text-md text-white rounded border border-blue focus:outline-none focus:border-black"
+									className="bg-gray-700 hover:bg-gray-500 py-2 px-4 text-md text-white rounded border border-blue focus:outline-none focus:border-black"
 									value="Login">Login
 								</button>
 							</div>
 						</form>
 
 						<div className="flex items-center mt-3 justify-center">
-							<button className="justify-center text-blue-500 hover:underline">
+							<button className="justify-center text-primary hover:underline">
 								<a href="/register"> Need to register? Sign up for free</a>
 							</button>
 						</div>
